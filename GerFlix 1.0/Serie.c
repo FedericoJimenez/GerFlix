@@ -41,6 +41,18 @@ void inicializarSeriesHardCode(eSerie series[])
     }
 }
 
+void retornarSerie(int idserie, eserie series[], int cant){
+
+    int s;
+    int serie;
+
+    for (s=0; s<cant;s++){
+        if (eserie[s] == idserie){
+
+    }
+
+
+
 
 
 

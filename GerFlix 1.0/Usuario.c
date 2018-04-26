@@ -33,6 +33,13 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
     }
 
 
+    mostrarDatos(eUsuario , eSerie, cantUsuarios, cantSeries){
+        int i;
+        for(i=0; i<cantUsuarios; i++){
+        printf()
+        }
+    }
+
 
 
 
