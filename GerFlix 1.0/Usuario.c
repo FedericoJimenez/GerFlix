@@ -31,20 +31,45 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
         strcpy(usuarios[i].nombre, nombre[i]);
 
     }
+}
+
+void mostrarDatos(int id, eUsuario userList[],  int cant){
+
+    int i;
+
+    for(i=0; i<cant; i++){
+        if (userList[i].idUsuario == id){
+            printf("\nID: %d \nNombre: %s \n", userList[i].idUsuario, userList[i].nombre);
+        }
+    }
+}
 
 
-    mostrarDatos(eUsuario , eSerie, cantUsuarios, cantSeries){
-        int i;
-        for(i=0; i<cantUsuarios; i++){
-        printf()
+void mostrarListaUsuarios(eUsuario userList[], int cant){
+
+    int i;
+
+    for(i = 999; i<1015; i++){
+        mostrarDatos(i, userList, cant);
+    }
+
+}
+
+void mostrarUsuarioConSuSerie(eUsuario userList[], int cantU, eSerie seriesList[], int cantS){
+
+    int u;
+    int s;
+
+    for(u = 0; u<cantU; u++){
+        for (s = 0; s<cantS; s++){
+            if (userList[u].idSerie == seriesList[s].idSerie){
+                printf("\n%d %s %d %s", userList[u].idUsuario, userList[u].nombre, seriesList[s].idSerie, seriesList[s].nombre);
+                break;
+            }else if(userList[u].estado == 0){
+                break;
+            }
         }
     }
 
-
-
-
-
-
-
-
 }
+

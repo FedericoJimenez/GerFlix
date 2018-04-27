@@ -6,6 +6,7 @@
 
 int main()
 {
+    int i;
     eSerie listaDeSeries[TAMSERIE];
     eUsuario listaDeUsuarios[TAMUSUARIO];
 
@@ -15,8 +16,9 @@ int main()
     inicializarUsuariosEstado(listaDeUsuarios,TAMUSUARIO);
     inicializarUsuariosHardCode(listaDeUsuarios);
 
-
-
+   // mostrarListaSeries(listaDeSeries, TAMSERIE);
+   // mostrarListaUsuarios(listaDeUsuarios, TAMUSUARIO);
+   // mostrarUsuarioConSuSerie(listaDeUsuarios, TAMUSUARIO, listaDeSeries, TAMSERIE);
 
     /*  1. Mostrar el listado de series
     2. Mostrar el listado de usuarios

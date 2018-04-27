@@ -41,18 +41,44 @@ void inicializarSeriesHardCode(eSerie series[])
     }
 }
 
-void retornarSerie(int idserie, eserie series[], int cant){
+
+void retornarSerie(int idSerie, eSerie series[], int cant){
 
     int s;
-    int serie;
 
     for (s=0; s<cant;s++){
-        if (eserie[s] == idserie){
+        if (series[s].idSerie == idSerie){
+            printf("\nID: %d \nNombre: %s \nGenero: %s \nCantidad de temporadas: %d",series[s].idSerie, series[s].nombre, series[s].genero, series[s].cantidadTemporadas);
 
+    return 0;
+        }
     }
+}
 
 
+void mostrarListaSeries(eSerie listaDeSeries[], int tamSerie){
 
+    int i;
+
+    for(i = 99; i<105; i++){
+        retornarSerie(i, listaDeSeries, tamSerie);
+    }
+}
+
+
+int u;
+    int s;
+
+    for(u = 0; u<cantU; u++){
+        for (s = 0; s<cantS; s++){
+            if (userList[u].idSerie == seriesList[s].idSerie){
+                printf("\n%d %s %d %s", userList[u].idUsuario, userList[u].nombre, seriesList[s].idSerie, seriesList[s].nombre);
+                break;
+            }else if(userList[u].estado == 0){
+                break;
+            }
+        }
+    }
 
 
 
